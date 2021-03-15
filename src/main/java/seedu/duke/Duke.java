@@ -50,13 +50,16 @@ public class Duke {
         while (!(isPublicUser | isAdmin)) {
             try {
                 String input = Ui.readCommand();
-                if (!(input.equals("1") | input.equals("2"))) {
+                if (!(input.equals("1") | input.equals("2") | input.equals("exit"))) {
                     throw new DukeExceptions("Wrong input, enter either 1 or 2.");
                 }
                 if (input.equals("1")) {
                     isPublicUser = true;
-                } else {
+                } else if (input.equals("2")){
                     isAdmin = true;
+                } else {
+                    ui.showGoodbye();
+                    System.exit(0);
                 }
             } catch (DukeExceptions e) {
                 ui.showError(e.getMessage());
