@@ -19,6 +19,7 @@ public class Duke {
     private boolean isAdmin = false;
     private boolean isVerified = false;
     private boolean isExit = false;
+    private String input;
 
     public Duke(String filePath) {
         ui = new Ui();
@@ -49,7 +50,7 @@ public class Duke {
     public void checkUser() {
         while (!(isPublicUser | isAdmin)) {
             try {
-                String input = Ui.readCommand();
+                input = Ui.readCommand();
                 if (!(input.equals("1") | input.equals("2") | input.equals("exit"))) {
                     throw new DukeExceptions("Wrong input, enter either 1 or 2.");
                 }
