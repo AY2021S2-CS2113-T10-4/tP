@@ -12,7 +12,7 @@ interacts with it using CLI.
 
 * **Summary of contributions**
 
-  * Code contributed: 
+  * Code contributed: [here](https://nus-cs2113-ay2021s2.github.io/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&since=&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor=KevinNgWK&tabRepo=AY2021S2-CS2113-T10-4%2Ftp%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=docs~functional-code~test-code)
   * Enhancements implemented: 
     1. HomeCommand
     2. LoginCommand
